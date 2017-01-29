@@ -1,0 +1,43 @@
+body {
+	font-family: "PT Sans";
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.main-nav {
+	font-weight: bold;
+	color: #000;
+}
+
+.active-page {
+	color: #766357;
+}
+
+h1 {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.features-name {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.info-hotel h2{
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.search-hotel a {
+	font-weight: bold;
+	/*color: #fff;*/
+}
+
+form {
+	font-weight: bold;
+}
+
+.footer-visitsedona {
+	font-size: 21px;
+	font-weight: bold;
+}
