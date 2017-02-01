@@ -1,20 +1,63 @@
 body {
-	font-family: "PT Sans", sans-serif;
-
+	font-family: "PT Sans", 'Tahoma', sans-serif;
 	font-size: 14px;
 	line-height: 21px;
 	text-transform: uppercase;
 	color: #000;
+	background-color: #f2f2f2;
+}
+
+header {
+	min-height: 56px;
+}
+
+.container {
+	width: 1200px;
+	margin: 0px auto;
+	padding: 0px;
 }
 
 .main-nav {
+	width: 1056px;
+	float: left;
+	margin: 0 73px;
 	line-height: 26px;
 	font-weight: bold;
 	color: #000;
+	background-color: grey;
+}
+
+.main-nav a{
+	text-decoration: none;
 }
 
 .active-page {
 	color: #766357;
+}
+
+main {
+	width: 1200px;
+	margin: 0px auto;
+	background-color: #bcdff5;
+}
+
+.index-logo {
+	width: 1200px;
+	min-height: 509px;
+	padding-top: 74px;
+	padding-left: 371px;
+}
+
+.features-item {
+	min-height: 1314px; 
+	padding-top: 62px;
+	background-color: blue;
+}
+
+.features-item::before {
+	content: "";
+	display: block;
+	clear: both;
 }
 
 h1 {
@@ -27,12 +70,92 @@ h1 {
 	font-weight: bold;
 }
 
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+	width: 1200px;
+}
+
 .features-1 {
-	/*color: #fff;*/
+	float: left;
+	width: 400px;
+	min-height: 256px;
+	color: #fff;
+	background-color: #81b3d2;
+}
+
+.photo-features-1 {
+	float: right;
+	width: 800px;
+	min-height: 256px;
+}
+
+.accomodition-features {
+	float: left;
+	width: 400px;
+	min-height: 332px;
+	background-color: grey;
+	/*outline: 2px  solid grey;*/
+}
+
+.food-features {
+	float: left;
+	width: 400px;
+	min-height: 332px;
+	background-color: #fff;
+	/*outline: 2px  solid black;*/
+}
+
+.souvenir-features {
+	float: right;
+	width: 400px;
+	min-height: 332px;
+	background-color: grey;
+	/*outline: 2px  solid grey;*/
+}
+
+.photo-features-2 {
+	float: left;
+	width: 800px;
+	min-height: 256px;	
 }
 
 .features-2 {
-	/*color: #fff;*/
+	float: right;
+	width: 400px;
+	min-height: 256px;
+	color: #fff;
+	background-color: #81b3d2;
+}
+
+.features-3 {
+	float: left;
+	width: 400px;
+	min-height: 256px;
+	background-color: #eee;
+}
+
+.features-4 {
+	float: left;
+	width: 400px;
+	min-height: 256px;
+	background-color: #fff;
+}
+
+.features-5 {
+	float: right;
+	width: 400px;
+	min-height: 256px;
+	background-color: #eee;
+}
+
+.search-hotel {
+	float: left;
+	width: 568px;
+	min-height: 292px;
+	margin: 0 316px;
+	background-color: #fff;
 }
 
 .search-hotel h2 {
@@ -47,12 +170,43 @@ h1 {
 
 .search-hotel a {
 	font-weight: bold;
-	/*color: #fff;*/
+	text-decoration: none;
 }
 
 form {
 	line-height: 26px;
 	font-weight: bold;
+}
+
+footer {
+	width: 1200px;
+	min-height: 120px;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+.footer-visitsedona {
+	float: left;
+	width: 400px;
+	min-height: 120px;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	background-color: grey;
+}
+
+.footer-social {
+	float: left;
+	width: 400px;
+	min-height: 120px
+	background-color: #fff;
+}
+
+.footer-copyright {
+	float: right;
+	width: 400px;
+	min-height: 120px;
+	background-color: grey;
 }
 
 .filter-container form {
@@ -65,16 +219,73 @@ form {
 	font-weight: bold;
 }
 
+.service-filter {
+	float: left;
+	width: 312px;
+	min-height: 217px;
+	background-color: #355468;
+}
+
+.accomodition {
+	float: left;
+	width: 288px;
+	min-height: 217px;
+	background-color: #83a2c1;
+}
+
+.cost-per-day {
+	float: right;
+	width: 600px;
+	min-height: 145px;
+	background-color: #293c43;
+}
 .search-btn {
+	float: right;
+	width: 600px;
+	min-height: 72px;
 	font-size: 21px;
 	line-height: 26px;
-	/*color: #fff;*/
+	color: #fff;
 }
 
 .result {
+	float: left;
+	width: 210px;
+	min-height: 87px;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
+	background-color: grey;
+}
+
+.sorting {
+	float: left;
+	width: 390px;
+	min-height: 87px;
+	background-color: #565656;
+}
+
+.sorting-arrow {
+	float: right;
+	width: 40px;
+	min-height: 87px;
+	margin-right: 73px;
+	background-color: #fff;
+}
+
+.photo-hotel {
+	float: left;
+	width: 135px;
+	min-height: 123px;
+	padding-left: 73px;
+	padding-top: 31px;
+}
+
+.info-hotel {
+	float: left;
+	width: 392px;
+	min-height: 154px;
+	background-color: #fff;
 }
 
 .info-hotel h2{
@@ -84,11 +295,18 @@ form {
 
 .info-hotel a {
 	font-weight: bold;
-	/*color: #fff;*/
+	text-decoration: none;
+	color: #fff;
+	background-color: #766357;
 }
 
-.footer-visitsedona {
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: bold;
+.rating-hotel {
+	float: right;
+	width: 160px;
+	min-height: 154px;
+	padding-right: 73px;
+}
+
+.hotel-2 {
+	background-color: #565656;
 }
