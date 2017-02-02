@@ -7,57 +7,64 @@ body {
 	background-color: #f2f2f2;
 }
 
-header {
-	min-height: 56px;
-}
-
-.container {
+.container {	
 	width: 1200px;
 	margin: 0px auto;
-	padding: 0px;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
 }
 
 .main-nav {
-	width: 1056px;
 	float: left;
+	width: 1056px;
+	min-height: 56px;
 	margin: 0 73px;
 	line-height: 26px;
 	font-weight: bold;
-	color: #000;
 	background-color: grey;
+}
+
+.main-nav li {
+	display: inline-block;
+	width: 128px;
 }
 
 .main-nav a{
 	text-decoration: none;
+	color: #000;
 }
-
 .active-page {
 	color: #766357;
 }
 
-main {
-	width: 1200px;
-	margin: 0px auto;
+.index-logo {
+	width: 458px;
+	min-height: 435px;
+	padding-top: 74px;
+	padding-left: 371px;
+	padding-right: 371px;
+
 	background-color: #bcdff5;
 }
 
-.index-logo {
-	width: 1200px;
-	min-height: 509px;
-	padding-top: 74px;
-	padding-left: 371px;
-}
-
 .features-item {
-	min-height: 1314px; 
-	padding-top: 62px;
-	background-color: blue;
+	text-align: center;
+
+	background-color: blue;	
 }
 
-.features-item::before {
-	content: "";
-	display: block;
-	clear: both;
+.entry {
+	float: left;
+	width: 576px;
+	min-height: 216px;
+	padding-left: 312px;
+	padding-right: 312px;
+
+	background-color: grey;
 }
 
 h1 {
@@ -70,18 +77,14 @@ h1 {
 	font-weight: bold;
 }
 
-.clearfix::after {
-	content: "";
-	display: block;
-	clear: both;
-	width: 1200px;
-}
+
 
 .features-1 {
 	float: left;
 	width: 400px;
 	min-height: 256px;
 	color: #fff;
+	vertical-align: middle;
 	background-color: #81b3d2;
 }
 
@@ -94,25 +97,27 @@ h1 {
 .accomodition-features {
 	float: left;
 	width: 400px;
-	min-height: 332px;
+	min-height: 172px;	
+	padding-top: 160px;
+
 	background-color: grey;
-	/*outline: 2px  solid grey;*/
 }
 
 .food-features {
 	float: left;
 	width: 400px;
-	min-height: 332px;
+	min-height: 172px;
+	padding-top: 160px;
 	background-color: #fff;
-	/*outline: 2px  solid black;*/
 }
 
 .souvenir-features {
 	float: right;
 	width: 400px;
-	min-height: 332px;
+	min-height: 172px;	
+	padding-top: 160px;
+
 	background-color: grey;
-	/*outline: 2px  solid grey;*/
 }
 
 .photo-features-2 {
@@ -132,21 +137,25 @@ h1 {
 .features-3 {
 	float: left;
 	width: 400px;
-	min-height: 256px;
+	min-height: 210px;
+	padding-top: 46px;
 	background-color: #eee;
 }
 
 .features-4 {
 	float: left;
 	width: 400px;
-	min-height: 256px;
-	background-color: #fff;
+	min-height: 210px;
+	padding-top: 46px;
+
+	background-color: #555;
 }
 
 .features-5 {
 	float: right;
 	width: 400px;
-	min-height: 256px;
+	min-height: 210px;
+	padding-top: 46px;
 	background-color: #eee;
 }
 
@@ -162,10 +171,12 @@ h1 {
 	font-size: 30px;
 	line-height: 24px;
 	font-weight: bold;
+	text-align: center;
 }
 
 .search-hotel p {
 	line-height: 24px;
+	text-align: center;
 }
 
 .search-hotel a {
@@ -178,13 +189,6 @@ form {
 	font-weight: bold;
 }
 
-footer {
-	width: 1200px;
-	min-height: 120px;
-	margin: 0px auto;
-	padding: 0px;
-}
-
 .footer-visitsedona {
 	float: left;
 	width: 400px;
@@ -192,13 +196,14 @@ footer {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
+
 	background-color: grey;
 }
 
 .footer-social {
 	float: left;
 	width: 400px;
-	min-height: 120px
+	min-height: 120px;
 	background-color: #fff;
 }
 
@@ -206,12 +211,13 @@ footer {
 	float: right;
 	width: 400px;
 	min-height: 120px;
+
 	background-color: grey;
 }
 
 .filter-container form {
 	font-weight: normal;
-	/*color: #fff;*/
+	color: #fff;
 }
 
 .filter-container p {
@@ -223,6 +229,7 @@ footer {
 	float: left;
 	width: 312px;
 	min-height: 217px;
+
 	background-color: #355468;
 }
 
@@ -230,6 +237,7 @@ footer {
 	float: left;
 	width: 288px;
 	min-height: 217px;
+
 	background-color: #83a2c1;
 }
 
@@ -237,6 +245,7 @@ footer {
 	float: right;
 	width: 600px;
 	min-height: 145px;
+
 	background-color: #293c43;
 }
 .search-btn {
@@ -246,6 +255,8 @@ footer {
 	font-size: 21px;
 	line-height: 26px;
 	color: #fff;
+
+	background-color: #83a2c1;
 }
 
 .result {
@@ -255,6 +266,7 @@ footer {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
+
 	background-color: grey;
 }
 
@@ -262,7 +274,12 @@ footer {
 	float: left;
 	width: 390px;
 	min-height: 87px;
+
 	background-color: #565656;
+}
+
+.sorting li {
+	display: inline-block;
 }
 
 .sorting-arrow {
@@ -270,6 +287,7 @@ footer {
 	width: 40px;
 	min-height: 87px;
 	margin-right: 73px;
+
 	background-color: #fff;
 }
 
@@ -285,6 +303,7 @@ footer {
 	float: left;
 	width: 392px;
 	min-height: 154px;
+	padding-left: 30px;
 	background-color: #fff;
 }
 
@@ -296,8 +315,7 @@ footer {
 .info-hotel a {
 	font-weight: bold;
 	text-decoration: none;
-	color: #fff;
-	background-color: #766357;
+	color: #000;
 }
 
 .rating-hotel {
