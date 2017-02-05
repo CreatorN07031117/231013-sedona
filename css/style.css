@@ -7,23 +7,17 @@ body {
 	background-color: #f2f2f2;
 }
 
-.container {	
+.container {
+	min-width: 	768px;
 	max-width: 1200px;
 	margin: 0 auto;
 }
 
-.clearfix::after {
-	content: "";
-	display: block;
-	clear: both;
-}
-
-header {
+.main-header {
 	position: relative;
-	min-height: 56px;
 	font-weight: bold;
 	background-color: #fff;
-	vertical-align: middle
+	
 }
 
 .logo {
@@ -33,30 +27,30 @@ header {
   transform: translateX(-50%);
 }
 
-ul {	
-	margin: 0;	
-	padding: 0;
+.main-nav ul {	
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0 6%;
+	min-height: 56px;
 }
 
 .left {
-	float: left;
-	width: 164px;
-	margin-left: 76px;
+	width: 20%;
 	text-align: left;
 }
 
 .right {
-	float: right;
-	width: 164px;
-	margin-right: 76px;
+	width: 20%;
 	text-align: right;
 }
 
+.main-nav li:nth-child(3) {
+	margin-left: 20%;
+}
 .main-nav li {
-	padding-top: 15px;
 	list-style: none;
 	line-height: 26px;
-	vertical-align: middle;
 }
 
 .main-nav a{
@@ -93,9 +87,11 @@ ul {
 .entry-text {
 	margin: auto;
 	width: 500px;
+	text-align: center;
 }
 
 h1 {
+	padding-bottom: 30px;
 	font-size: 21px;
 	font-weight: bold;
 }
@@ -248,38 +244,124 @@ h1 {
 	color: #fff;
 }
 
-form {
-	width: 568px;
-	min-height: 53px;
+.search-hotel-form {
+	display: flex;
+	flex-direction: column;	
+	justify-content: space-between;
+	width: 458px;
 	margin: 0 auto;
+	padding: 40px 55px;
 	line-height: 26px;
 	font-weight: bold;
-}
-
-.footer-visitsedona {
-	float: left;
-	width: 400px;
-	min-height: 120px;
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: bold;
-
-	background-color: grey;
-}
-
-.footer-social {
-	float: left;
-	width: 400px;
-	min-height: 120px;
 	background-color: #fff;
 }
 
-.footer-copyright {
-	float: right;
-	width: 400px;
-	min-height: 120px;
+.search-hotel-form div {
+	min-height: 40px;
+	margin: 15px 0;
+}
 
-	background-color: grey;
+.checkin-date input, .checkout-date input {
+	width: 292px;
+	height: 38px;
+	margin-left: 20px; 
+	padding: 0 12px;
+	border: none;
+	font-family: "PT Sans", 'Tahoma', sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;	
+	text-transform: uppercase;
+	color: #000;
+	background-color: #f2f2f2;
+}
+
+.checkin-date a, .checkout-date a {
+
+}
+
+.client div {
+	margin: 0 auto;
+}
+
+.older-client, .child-client {
+	display: inline-block;
+	width: 227px;
+	min-height: 40px;
+}
+
+.older-client input, .child-client input {
+	width: 37px;
+	height: 38px;
+	border: none;
+	margin: 0;
+	padding: 0;
+	font-family: "PT Sans", 'Tahoma', sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;	
+	text-transform: uppercase;
+	text-align: center;
+	color: #000;
+	background-color: #f2f2f2;
+}
+
+.older-client button, .child-client button {
+	width: 40px;
+	height: 40px;
+	border: none;
+	margin: 0;
+	padding: 0;
+	font-family: "PT Sans", 'Tahoma', sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;	
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+	color: #000;
+	background-color: #f2f2f2;
+}
+
+.search-btn button {
+	width: 458px;
+	padding-top: 15px;
+	padding-bottom: 19px;
+	border: none;
+	font-family: "PT Sans", 'Tahoma', sans-serif;
+	font-size: 21px;
+	line-height: 26px;	
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+
+	background-color: #83a2c1;
+}
+
+.main-footer {
+	display: flex;
+	padding: 0 6%;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 120px;
+	text-align: center;
+	background-color: #fff;
+}
+
+.footer-visitsedona {
+	width: 27.34%;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+.footer-social {
+	display: inline-block;
+	width: 33.33%;
+}
+
+.footer-copyright {
+	width: 27.33%;	
 }
 
 .filter-container form {
@@ -314,13 +396,6 @@ form {
 	min-height: 145px;
 
 	background-color: #293c43;
-}
-.search-btn {
-	font-size: 21px;
-	line-height: 26px;
-	color: #fff;
-
-	background-color: #83a2c1;
 }
 
 .result {
