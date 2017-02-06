@@ -311,7 +311,7 @@ h1 {
 	background-color: #f2f2f2;
 }
 
-.older-client button, .child-client button {
+.minus, .plus {
 	width: 40px;
 	height: 40px;
 	border: none;
@@ -402,6 +402,33 @@ h1 {
 
 	background-color: rgba(186,186,186,0.5);
 }
+.filter-form label {
+	position: relative;
+	margin-left: 35px;
+}
+
+.filter-form span,
+input[type="checkbox"] {
+  	position: absolute;
+}
+
+.filter-form input[type="checkbox"] {
+ 	left: -99999px;
+  	top: 0;
+}
+
+
+
+.filter-form span {
+  	display: block;
+  	left: -35px;
+  	top: 1px;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #fff;
+	border-radius: 15%;
+	background: none;
+}
 
 .cost-slider-show-btn {
 	width: 28%;
@@ -433,17 +460,18 @@ h1 {
 }
 
 .result {
-	display: block;
 	width: 16%;
+	margin: auto 0;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
-	background-color: rgba(198,215,23,0.5);
 }
 
 .sorting {
-	flex-grow: 1;
-	background-color: rgba(198,215,23,0.3);
+	flex-grow: 1;	
+	margin: auto 0;
+	font-size: 12px;
+	line-height: 18px;
 }
 
 .sorting ul {
@@ -452,19 +480,37 @@ h1 {
 }
 
 .sorting ul, li, span {
-	display: inline;
+	display: inline-block;
+}
+
+.sorting li:first-child {
+	margin-left: 38px;
+	text-decoration: none;
+	color: #81b3d2;
+}
+
+.sorting li:nth-child(2) {
+	margin-left: 31px;	
+	color: #e5e5e5;
+}
+
+.sorting li:last-child {
+	margin-left: 33px;	
+	color: #e5e5e5;
+}
+
+.sorting-arrow {
+	margin: auto 0;
 }
 
 .sorting-arrow  a {
 	display: inline-block;
-	background-color: rgba(215,30,23,0.3);
 }
 
 .found-hotel {
 	display: flex;
 	margin: 0;
-	padding: 0 6%;;
-	/*align-items: center;*/
+	padding: 0 6%;
 	min-height: 153px;
 	border-bottom: 1px solid #e5e5e5;
 }
