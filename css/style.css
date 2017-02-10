@@ -144,6 +144,11 @@ h1 {
 	width: 66.66%;
 }
 
+.photo-real-town img {
+	height: 100%;
+	border: none;
+}
+
 .features-with-icon {
 	display: flex;
 	justify-content: space-between;
@@ -171,7 +176,12 @@ h1 {
 }
 
 .photo-devil-bright {
-	width: 66.67%;	
+	width: 66.67%;
+}
+
+.photo-devil-bright img {
+	height: 100%;
+	border: none;
 }
 
 .devil-bridge {
@@ -462,14 +472,12 @@ h1 {
 
 .service {
 	width: 20%;
-	background-color: rgba(254,254,254,0.5);
 }
 
 .accomodition {
 	width: 30%;
-
-	background-color: rgba(186,186,186,0.5);
 }
+
 .filter-form label {
 	position: relative;
 	margin-left: 35px;
@@ -480,12 +488,9 @@ input[type="checkbox"] {
   	position: absolute;
 }
 
-.filter-form input[type="checkbox"] {
- 	left: -99999px;
-  	top: 0;
+.filter-form input[type=checkbox] {
+  display: none;
 }
-
-
 
 .filter-form span {
   	display: block;
@@ -493,23 +498,142 @@ input[type="checkbox"] {
   	top: 1px;
 	width: 15px;
 	height: 15px;
-	border: 1px solid #fff;
+	border: 2px solid #fff;
 	border-radius: 15%;
 	background: none;
 }
 
-.cost-slider-show-btn {
-	width: 28%;
-	margin-left: 22%; 
-
-	background-color: rgba(120,194,230,0.3);
+.filter-form input[type=checkbox]:checked + span:before {
+    content: '';
+    position: absolute; 
+    left: 1px; 
+    top: 8px;  
+    width: 8px;
+    height: 4px;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);    
+}
+.filter-form input[type=checkbox]:checked + span:after{
+    content: '';
+    position: absolute; 
+    left: 3px;
+    top: 5px;
+    width: 17px;
+    height: 4px;
+    background: #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);       
 }
 
-.cost-slider-show-btn button {
+.filter-range {
+	width: 330px;
+	margin-left: 22%; 
+}
+
+.filter-range-title {
+	margin-bottom: 9px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 21px;
+}
+
+.price-controls {
+	position: relative;
+	height: 36px;
+	margin-bottom: 20px;
+	font-size: 0;
+	border: 2px solid #fff;
+	border-radius: 2px;
+}
+
+.price-controls::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 2px;
+	height: 22px;
+	background: #fff;
+}
+
+.price-controls label {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 38px;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	/*padding-left: 55px;*/
+}
+
+.price-controls input {
+	width: 50px;
+	margin: 0;
+	color: inherit;
+	font: inherit;
+	background: none;
+	border: none;
+	outline: none;
+}
+
+.range-controls {
+	position: relative;
+	margin-bottom: 32px;
+}
+
+.range-controls .scale {
+	height: 2px;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+	width: 80%;
+	height: 2px;
+	background-color: #fff;
+}
+
+.range-toggle {
+	position: absolute;
+	top: -9px;
+	width: 4px;
+	height: 4px;
+	background-color: #ababab;
+	border: 8px solid #fff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	cursor: pointer;
+}
+
+.range-toggle:hover {
+	background-color: #1c4f80;
+}
+
+.range-toggle-min {
+	left: 0;
+}
+
+.range-toggle-max {
+	left: 80%;
+}
+
+.filter-range button {
+	display: block;
 	width: 135px;
 	height: 35px;
-	border: 1px solid #fff;
+	margin: 0 auto;
+	border: 2px solid #fff;
+	border-radius: 2px;
+	outline: none;
 	background: none;
+	cursor: pointer;
 	font-family: "PT Sans", 'Tahoma', sans-serif;
 	font-size: 14px;
 	line-height: 21px;
@@ -517,6 +641,11 @@ input[type="checkbox"] {
 	text-align: center;
 	vertical-align: middle;
 	color: #fff;
+}
+
+.filter-range button:hover {
+	background-color: #fff;
+	color: #000;
 }
 
 .result-container {

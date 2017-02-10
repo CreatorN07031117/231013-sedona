@@ -27,7 +27,7 @@
           <div class="service">
             <p>Инфраструктура:</p>
               <label>
-                <input type="checkbox" name="pool">
+                <input type="checkbox" name="pool" checked>
                 <span class="checkbox-box"></span>
                 Бассейн
               </label>
@@ -60,11 +60,23 @@
                 Апартаменты
               </label>
           </div>
-          <div class="cost-slider-show-btn">
-            <p>Стоимость в сутки(p):</p>
-            <input type="text" value="0">
-            <input type="text" value="3000">
-            <input type="range" min="0" max="4000" value="3000">
+          <div class="filter-range">
+            <div class="filter-range-title">Стоимость в сутки (p):</div>
+            <div class="price-controls">
+              <label class="min-price">
+                от <input type="text" value="0">
+              </label>
+              <label class="max-price">
+                до <input type="text" value="3000">
+              </label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
             <button type="submit" class="show-btn" >Показать</button>
           </div>
         </form>
