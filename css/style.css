@@ -12,6 +12,8 @@ body {
 	min-width: 	768px;
 	max-width: 1200px;
 	margin: 0 auto;
+
+	box-shadow: 0px 0px 30px 5px rgba(0, 1, 1, 0.2);
 }
 
 .main-header {
@@ -552,7 +554,7 @@ button.btn-plus:active::before {
 	background-position: 5px -72px;
 }
 
- .older-client span, .child-client span {
+.older-client span, .child-client span {
  	display: inline-block;
 
 	font-size: 14px;
@@ -650,12 +652,12 @@ button.btn-plus:active::before {
 	background-position: 15px 12px;
 }
 
-.social-btn-fb, .social-btn-fb:hover {
+.social-btn-fb, .social-btn-fb:hover, .social-btn-fb:active {
 	margin-right: 5px;
 	background-position: -38px 12px;
 }
 
-.social-btn-yt, .social-btn-yt:hover {
+.social-btn-yt, .social-btn-yt:hover, .social-btn-yt:active {
 	background-position: -89px 12px;
 }
 
@@ -780,7 +782,9 @@ input[type="checkbox"] {
 
 .price-controls {
 	position: relative;
+	width: 314px;
 	height: 36px;
+	margin-left: 10px;
 	margin-bottom: 20px;
 	font-size: 0;
 	border: 2px solid #fff;
@@ -809,16 +813,25 @@ input[type="checkbox"] {
 .price-controls .min-price,
 .price-controls .max-price {
 	display: inline-block;
-	width: 100px;
+	width: 90px;
 	text-align: center;
-	/*padding-left: 55px;*/
+}
+
+.price-controls .min-price {
+	padding-left: 10px;
+}
+
+.price-controls .max-price {
+	padding-left: 25px;
 }
 
 .price-controls input {
-	width: 50px;
+	width: 40px;
 	margin: 0;
+
+	font: inherit;	
 	color: inherit;
-	font: inherit;
+
 	background: none;
 	border: none;
 	outline: none;
@@ -830,6 +843,7 @@ input[type="checkbox"] {
 }
 
 .range-controls .scale {
+	margin-left: 16px;
 	height: 2px;
 	background: rgba(255, 255, 255, 0.3);
 }
@@ -837,14 +851,17 @@ input[type="checkbox"] {
 .range-controls .bar {
 	width: 80%;
 	height: 2px;
+
 	background-color: #fff;
 }
 
 .range-toggle {
 	position: absolute;
 	top: -9px;
+
 	width: 4px;
 	height: 4px;
+
 	background-color: #ababab;
 	border: 8px solid #fff;
 	border-radius: 50%;
@@ -857,7 +874,7 @@ input[type="checkbox"] {
 }
 
 .range-toggle-min {
-	left: 0;
+	left: 8px;
 }
 
 .range-toggle-max {
@@ -866,14 +883,17 @@ input[type="checkbox"] {
 
 .filter-range button {
 	display: block;
+
 	width: 135px;
 	height: 35px;
 	margin: 0 auto;
+
 	border: 2px solid #fff;
 	border-radius: 2px;
 	outline: none;
 	background: none;
 	cursor: pointer;
+
 	font-family: "PT Sans", 'Tahoma', sans-serif;
 	font-size: 14px;
 	line-height: 21px;
@@ -891,14 +911,17 @@ input[type="checkbox"] {
 .result-container {
 	display: flex;
 	align-content: center;
+
 	min-height: 86px;
 	padding: 0 6%;	
+
 	border-bottom: 1px solid #e5e5e5;
 }
 
 .result {
 	width: 16%;
 	margin: auto 0;
+
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
@@ -907,6 +930,7 @@ input[type="checkbox"] {
 .sorting {
 	flex-grow: 1;	
 	margin: auto 0;
+
 	font-size: 12px;
 	line-height: 18px;
 }
@@ -929,11 +953,29 @@ input[type="checkbox"] {
 .sorting li:nth-child(2) {
 	margin-left: 31px;	
 	color: #e5e5e5;
+	border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting li:last-child {
 	margin-left: 33px;	
 	color: #e5e5e5;
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting li:hover {
+	color: #81b3d2;
+	border-bottom: 1px dotted #81b3d2
+}
+
+.sorting li:active {
+	color: #000;
+	border-bottom: none;
+}
+
+.sorting a {
+	font: inherit;
+	text-decoration: inherit;	
+	color: inherit;
 }
 
 .sorting-arrow {
@@ -942,13 +984,59 @@ input[type="checkbox"] {
 
 .sorting-arrow  a {
 	display: inline-block;
+	position: relative;
+	font-size: 0;
+}
+
+a.arrow-up {
+	margin-right: 20px
+}
+
+a.arrow-up::after {
+	content: "";
+
+	position: absolute;
+	top: -2px;
+	display: block;
+
+	border: 5px solid transparent;	
+	border-bottom: 10px solid #ccc;
+}
+
+a.arrow-up:hover::after {
+	border-bottom: 10px solid #000;
+}
+
+a.arrow-up:active::after, a.arrow-up-active::after {
+	border-bottom: 10px solid #81b3d2;
+}
+
+a.arrow-down:after {
+	content: "";
+
+	position: absolute;
+	top: 3px; 
+	display: block;
+
+	border: 5px solid transparent;	
+	border-top: 10px solid #ccc;
+}
+
+a.arrow-down:hover::after {
+	border-top: 10px solid #000;
+}
+
+a.arrow-down:active::after, a.arrow-down-active::after {
+	border-top: 10px solid #81b3d2;
 }
 
 .found-hotel {
 	display: flex;
+
 	margin: 0;
 	padding: 0 6%;
 	min-height: 153px;
+
 	border-bottom: 1px solid #e5e5e5;
 }
 
@@ -963,15 +1051,17 @@ input[type="checkbox"] {
 }
 
 .info-hotel h2{
-	font-size: 21px;
-	font-weight: bold;
 	margin: 0;
 	padding-top: 27px;
 	padding-bottom: 13px;
+
+	font-size: 21px;
+	font-weight: bold;
 }
 
 .info-hotel span {
 	display: inline-block;
+
 	width: 110px;
 	padding: 0;
 	padding-bottom: 13px; 
@@ -983,16 +1073,42 @@ input[type="checkbox"] {
 	color: #000;
 }
 
+.info-hotel a:hover {
+	color: #81b3d2;
+}
+
+.info-hotel a:active {
+	color: #cacaca;
+}
+
 .speedaction-btn a{
 	display: inline-block;
+
 	text-align: center;
+	color: #fff;
+}
+
+.speedaction-btn a:hover {
 	color: #fff;
 }
 
 .details-btn {
 	width: 110px;
 	padding: 2px 0;
+
 	background-color: #81b3d2;
+}
+
+.details-btn:hover {
+	background-color: #669ec0;
+}
+
+.details-btn:active {
+	background-color: #5496bd;
+}
+
+a.details-btn:active {
+	color: #94b9d2;
 }
 
 .booking-btn {
@@ -1001,9 +1117,44 @@ input[type="checkbox"] {
 	background-color: #766357;
 }
 
-.rating-hotel {
-	width: 112px;
-	margin-top: 94px;
+.booking-btn:hover {
+	background-color: #604e43;
+}
+
+.booking-btn:active {
+	background-color: #503e33;
+}
+
+a.booking-btn:active {
+	color: #928a85;
+}
+
+.stars-rating-hotel {
+	margin-top: 29px;
+}
+
+.stars-rating-hotel ul  {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+
 	text-align: right;
+}
+
+.stars-rating-hotel li {
+	width: 17px;
+	height: 17px;
+	background: url("../img/star-rating.png") no-repeat;
+	text-align: right;
+}
+
+.customer-rating-hotel {
+	width: 100px;
+	margin-top: 47px;
+	padding-right: 13px; 
+
+	text-align: right;
+
+	background-color: #f2f2f2;
 }
 
