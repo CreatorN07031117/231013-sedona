@@ -87,9 +87,7 @@ main {
 }
 
 .logo-background {
-	min-height: 510px;
-	padding-top: 75px;
-
+	min-height: 512px;
 	background-image: url("../img/index-logo-background.jpg");
 	background-size: cover;
 }
@@ -99,12 +97,13 @@ main {
 	height: 352px;
 	margin-left: auto;
 	margin-right: auto; 
+	padding-top: 75px
 }
 
 .logo-background::after {
 	content: url("../img/bottom-frame-logo.png");
 	position: absolute;
-	top: 584px;
+	top: 510px;
 
 }
 
