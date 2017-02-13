@@ -38,30 +38,37 @@ body {
 
 	min-height: 56px;
 	margin: 0;
-	padding: 0 6%;	
-}
-
-.left {
-	width: 20%;
-
-	text-align: left;
-	vertical-align: middle;
-}
-
-.right {
-	width: 20%;
-
-	text-align: right;
-	vertical-align: center;
-}
-
-.main-nav li:nth-child(3) {
-	margin-left: 20%;
+	padding: 0;	
 }
 
 .main-nav li {
 	list-style: none;
 	line-height: 26px;
+	vertical-align: center;
+}
+
+.main-nav li:first-child {
+	width: 14%;
+	padding-left: 6%;
+	text-align: left;
+}
+
+.main-nav li:nth-child(2) {
+	width: 20%;
+	text-align: center;
+}
+
+.main-nav li:nth-child(3) {
+	width: 20%;
+	margin-left: 20%;
+
+	text-align: center;
+}
+
+.main-nav li:last-child {
+	width: 14%;
+	padding-right: : 6%;
+	text-align: right;
 }
 
 .main-nav a {
@@ -87,7 +94,7 @@ main {
 }
 
 .logo-background {
-	min-height: 512px;
+	min-height: 507px;
 	background-image: url("../img/index-logo-background.jpg");
 	background-size: cover;
 }
@@ -103,7 +110,7 @@ main {
 .logo-background::after {
 	content: url("../img/bottom-frame-logo.png");
 	position: absolute;
-	top: 510px;
+	top: 506px;
 
 }
 
@@ -135,6 +142,10 @@ main {
 	font-size: 21px;
 	font-weight: bold;
 }
+
+.entry-text p {
+	margin: 0;
+} 
       
 .features-name {
 	display: block;
