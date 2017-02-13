@@ -151,7 +151,7 @@ main {
 	display: block;
 
 	width: 160px;
-	margin-top: 50px;
+	margin-top: 52px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 0; 
@@ -163,7 +163,7 @@ main {
 .features-number {	
 	display: block;
 
-	margin-top: 20px;
+	margin-top: 22px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -330,7 +330,7 @@ main {
 .search-hotel-text {
 	width: 568px;
 	min-height: 158px;
-	margin-top: 57px;
+	margin-top: 51px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 70px; 
@@ -358,7 +358,7 @@ main {
 	width: 568px;
 	min-height: 53px;
 	margin: 0 auto;
-	padding-top: 32px;
+	padding-top: 30px;
 
 	text-align: center;
 
@@ -375,7 +375,7 @@ main {
 
 .search-hotel-form {
 	position: absolute;
-	top: 300px;
+	top: 292px;
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 1;
@@ -385,7 +385,7 @@ main {
 	justify-content: space-between;
 
 	width: 458px;
-	padding: 40px 54px;
+	padding: 55px 54px;
 
 	line-height: 26px;
 	font-weight: bold;
@@ -398,14 +398,19 @@ main {
 	margin: 15px 0;
 }
 
+.checkin-date label, .checkout-date label {
+	font-size: 14px;
+	line-height: 26px;
+}
+
 .checkin-date input, .checkout-date input {
 	position: absolute;
 
-	width: 334px;
+	width: 332px;
 	height: 38px;
 	margin-left: 20px; 
 	padding: 0;
-	padding-left: 12px; 
+	padding-left: 14px; 
 
 	border: none;
 
@@ -475,6 +480,11 @@ main {
 	padding-left: 45px;
 
 	font-size: 0;
+}
+
+.older-client label, .child-client label {
+	font-size: 14px;
+	line-height: 26px;
 }
 
 .older-client input, .child-client input {
