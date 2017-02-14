@@ -741,11 +741,12 @@ button.btn-plus:active::before {
 
 .filter-form p {
 	margin: 0;
-	margin-top: 27px;
+	margin-top: 23px;
 	padding: 0;
 	padding-bottom: 25px;
 
 	font-size: 16px;
+	line-height: 21px;
 	font-weight: bold;
 }
 
@@ -755,7 +756,7 @@ button.btn-plus:active::before {
 }
 
 .service {
-	width: 27.5%;
+	width: 32%;
 }
 
 .accomodition {
@@ -764,7 +765,7 @@ button.btn-plus:active::before {
 
 .filter-form label {
 	position: relative;
-	margin-left: 35px;
+	margin-left: 40px;
 }
 
 .filter-form span,
@@ -778,11 +779,11 @@ input[type="checkbox"] {
 
 .filter-form span {
   	display: block;
-  	left: -35px;
+  	left: -40px;
   	top: 1px;
 
-	width: 15px;
-	height: 15px;
+	width: 17px;
+	height: 17px;
 
 	border: 2px solid #fff;
 	border-radius: 4px;
@@ -805,7 +806,7 @@ input[type="checkbox"] {
     position: absolute; 
     left: 3px;
     top: 5px;
-    width: 17px;
+    width: 20px;
     height: 4px;
     background: #fff;
     transform: rotate(-45deg);       
