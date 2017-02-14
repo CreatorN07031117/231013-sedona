@@ -621,6 +621,7 @@ button.btn-plus:active::before {
 	color: #fff;
 
 	background-color: #83a2c1;
+	cursor: pointer;
 }
 
 .search-btn button:hover {
@@ -771,6 +772,7 @@ button.btn-plus:active::before {
 .filter-form span,
 input[type="checkbox"] {
   	position: absolute;
+  	cursor: pointer;
 }
 
 .filter-form input[type=checkbox] {
