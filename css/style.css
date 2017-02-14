@@ -639,7 +639,7 @@ button.btn-plus:active::before {
 	align-items: center;
 
 	min-height: 120px;
-	padding: 0 6%;
+	padding: 0 0;
 
 	text-align: center;
 
@@ -653,6 +653,7 @@ button.btn-plus:active::before {
 
 .footer-visitsedona {
 	width: 27.34%;
+	margin-left: 6%;
 
 	font-size: 21px;
 	line-height: 26px;
@@ -672,7 +673,7 @@ button.btn-plus:active::before {
 	background: #81b3d2 url("../img/social-btn.png") no-repeat;
 
 	vertical-align: middle;
-	text-indent: -2545px;
+	text-indent: -12545px;
 }
 
 .social-btn:hover {
@@ -699,6 +700,7 @@ button.btn-plus:active::before {
 
 .footer-copyright {
 	width: 27.33%;	
+	margin-right: 6%
 }
 
 .htmlacademy-icon {
@@ -711,7 +713,7 @@ button.btn-plus:active::before {
 	background: url("../img/htmlacademy.png") no-repeat;
 
 	vertical-align: middle;
-	text-indent: -2545px;
+	text-indent: -12545px;
 }
 
 .htmlacademy-icon:hover {
