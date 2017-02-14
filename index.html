@@ -148,5 +148,12 @@
       </div>
     </footer>
   </div>
+  <script type="text/javascript">
+    var link = document.querySelector(".search-hotel-btn");
+    var hotelform = document.querySelector(".search-hotel-form")
+
+    link.addEventListener("click", function(event) {event.preventDefault();
+    hotelform.classList.toggle("search-hotel-form-hidden");});
+  </script>
 </body>
 </html>
