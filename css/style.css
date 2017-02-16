@@ -117,9 +117,13 @@ main {
 	top: 506px;
 	background: url("../img/bottom-frame-logo.png") no-repeat;
 	background-size: 100% 57px;
-	background-position: left bottom;
+	background-position: bottom;
+	animation: welcome 1s;
+}
 
-
+@keyframes welcome{
+	from {transform: translateY(60px)}
+	to	{transform: translateY(0)}
 }
 
 .features-item {
@@ -404,10 +408,23 @@ main {
 	background-color: #fff;
 
 	box-shadow: 0 0 30px 3px rgba(0, 1, 1, 0.2);
+
+	
+}
+
+.hotelform-animation {
+	animation: hotelform 2s;
 }
 
 .search-hotel-form-hidden {
 	visibility: hidden;
+}
+
+@keyframes hotelform {
+	from {opacity: 0;
+		height: 0;}
+	to {opacity: 1;
+		height:100%;}
 }
 
 .search-hotel-form div {
@@ -452,7 +469,7 @@ main {
 
 .calendar {
 	position: relative;
-	top: 8px;
+	top: 4px;
 	margin-left: 335px;
 }
 
@@ -460,6 +477,7 @@ main {
 	content: "";
 
 	position: absolute;
+	top: 0px;
 
 	width: 23px;
 	height: 23px;
@@ -630,6 +648,7 @@ button.btn-plus:active::before {
 }
 
 .search-btn button:hover {
+
 	background-color: #669ec0;
 }
 
@@ -637,6 +656,8 @@ button.btn-plus:active::before {
 	color: #94b9d2;
 
 	background-color: #5496bd;
+
+	
 }
 
 .main-footer {
@@ -658,8 +679,7 @@ button.btn-plus:active::before {
 }
 
 .footer-visitsedona {
-	width: 33.34%;
-	padding-right: 9%;
+	width: 22.72%;
 
 	font-size: 21px;
 	line-height: 26px;
@@ -708,7 +728,7 @@ button.btn-plus:active::before {
 }
 
 .footer-copyright {
-	width: 33.33%;	
+	width: 22.72%;
 }
 
 .htmlacademy-icon {

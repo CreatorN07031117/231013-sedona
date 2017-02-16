@@ -95,18 +95,18 @@
         <div class="search-hotel-btn">
           <a href="#">Поиск гостиницы в Седоне</a>
         </div>
-        <form action="#" method="post" class="search-hotel-form">
+        <form action="#" method="post" class="search-hotel-form hotelform-animation">
           <div class="checkin-date">
             <label>
               Дата заезда:
-              <input type="text" name="checkin-date" value="24 апреля 2017">
+              <input type="text" name="checkin-date" placeholder="24 апреля 2017">
               <a class="calendar" href="#" ></a>
             </label>
           </div>
           <div class="checkout-date">
             <label>
               Дата выезда:
-              <input type="text" name="checkout-date" value="4 июля 2017">
+              <input type="text" name="checkout-date" placeholder="4 июля 2017">
               <a class="calendar" href="#"></a>
             </label>
           </div>
@@ -114,13 +114,13 @@
             <div class="older-client">
               <span class="older-client-label">Взрослые:</span>
               <button class="btn-minus" type="submit">-</button>
-              <input type="text" name="older-client" min="0" value="2">
+              <input type="text" name="older-client" min="0" placeholder="2">
               <button class="btn-plus" type="submit">+</button>
             </div>
             <div class="child-client">
               <span class="child-client-label">Дети:</span>
               <button class="btn-minus" type="submit">-</button>
-              <input type="text" name="child-client" min="0" value="0">
+              <input type="text" name="child-client" min="0" placeholder="0">
               <button class="btn-plus" type="submit">+</button>
             </div>
           </div>
@@ -150,10 +150,14 @@
   </div>
   <script type="text/javascript">
     var link = document.querySelector(".search-hotel-btn");
-    var hotelform = document.querySelector(".search-hotel-form")
-
+    var hotelform = document.querySelector(".search-hotel-form");
+    
     link.addEventListener("click", function(event) {event.preventDefault();
-    hotelform.classList.toggle("search-hotel-form-hidden");});
+    hotelform.classList.toggle("search-hotel-form-hidden")});
+    link.addEventListener("click", function(event) {
+    hotelform.classList.toggle("hotelform-animation")})
+
+
   </script>
 </body>
 </html>
