@@ -124,7 +124,7 @@
               <button class="btn-plus" type="submit">+</button>
             </div>
           </div>
-          <div class="search-btn">
+          <div class="search-btn search-btn-animation">
             <button type="submit">Найти</button>
           </div>
         </form>
@@ -151,13 +151,13 @@
   <script type="text/javascript">
     var link = document.querySelector(".search-hotel-btn");
     var hotelform = document.querySelector(".search-hotel-form");
+    var searchbtn = document.querySelector(".search-btn");
     
     link.addEventListener("click", function(event) {event.preventDefault();
     hotelform.classList.toggle("search-hotel-form-hidden")});
     link.addEventListener("click", function(event) {
-    hotelform.classList.toggle("hotelform-animation")})
-
-
+    hotelform.classList.toggle("hotelform-animation");
+    searchbtn.classList.toggle("search-btn-animation")})
   </script>
 </body>
 </html>

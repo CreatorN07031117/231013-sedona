@@ -655,9 +655,17 @@ button.btn-plus:active::before {
 .search-btn button:active {
 	color: #94b9d2;
 
-	background-color: #5496bd;
+	background-color: #5496bd;	
+}
 
-	
+.search-btn-animation {
+	animation: searchbutton 2.12s;
+}
+
+@keyframes searchbutton {
+	from{opacity: 0}
+	95% {opacity: 0}
+	to {opacity: 1}
 }
 
 .main-footer {
