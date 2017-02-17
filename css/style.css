@@ -50,11 +50,13 @@ body {
 .main-nav li:first-child {
 	width: 14%;
 	padding-left: 6%;
+
 	text-align: left;
 }
 
 .main-nav li:nth-child(2) {
 	width: 20%;
+
 	text-align: center;
 }
 
@@ -67,7 +69,8 @@ body {
 
 .main-nav li:last-child {
 	width: 14%;
-	padding-right: : 6%;
+	padding-right: 6%;
+
 	text-align: right;
 }
 
@@ -95,6 +98,7 @@ main {
 
 .logo-background {
 	min-height: 507px;
+	background-color: #22516f;
 	background-image: url("../img/index-logo-background.jpg");
 	background-size: cover;
 }
@@ -109,15 +113,19 @@ main {
 
 .logo-background::after {
 	content: "";
+
+	position: absolute;
+	top: 506px;
+
 	width: 100%;
 	min-width: 768px;
 	max-width: 1200px;
 	height: 57px;
-	position: absolute;
-	top: 506px;
+
 	background: url("../img/bottom-frame-logo.png") no-repeat;
 	background-size: 100% 57px;
 	background-position: bottom;
+
 	animation: welcome 1s;
 }
 
@@ -128,6 +136,7 @@ main {
 
 .features-item {
 	text-align: center;
+
 	background-color: blue;	
 }
 
@@ -157,8 +166,8 @@ main {
 
 .entry-text p {
 	margin: 0;
-} 
-      
+}
+
 .features-name {
 	display: block;
 
@@ -217,6 +226,7 @@ main {
 
 	min-height: 330px;
 }
+
 .accomodition-features {
 	position: relative;
 
@@ -268,7 +278,9 @@ main {
 
 	width: 33.33%;	
 	padding-top: 110px;
+
 	text-align: center;
+
 	background-color: #fff;
 }
 
@@ -291,6 +303,7 @@ main {
 .photo-devil-bright img {
 	width: 100%;
 	height: 100%;
+
 	border: none;
 }
 
@@ -444,8 +457,6 @@ main {
 	padding: 0;
 	padding-left: 14px; 
 
-	border: none;
-
 	font-family: "PT Sans", 'Tahoma', sans-serif;
 	font-size: 14px;
 	line-height: 26px;
@@ -453,6 +464,7 @@ main {
 	text-transform: uppercase;
 	color: #000;
 
+	border: none;
 	background-color: #f2f2f2;
 }
 
@@ -468,6 +480,7 @@ main {
 .calendar {
 	position: relative;
 	top: 4px;
+
 	margin-left: 335px;
 }
 
@@ -493,6 +506,7 @@ main {
 
 .client div {
 	margin: 0;
+
 	font-size: 0;
 }
 
@@ -528,8 +542,6 @@ main {
 	margin: 0;
 	padding: 0;
 
-	border: none;
-	
 	font-family: "PT Sans", 'Tahoma', sans-serif;
 	font-size: 14px;
 	line-height: 26px;
@@ -538,21 +550,19 @@ main {
 	text-align: center;
 	color: #000;
 
+	border: none;
 	background-color: #f2f2f2;
-
 	outline-color: #e5e5e5;
 }
 
 .older-client button, .child-client button {
- 	position: relative;
+	position: relative;
 
- 	display: inline-block;
+	display: inline-block;
 	width: 40px;
 	height: 40px;
 	margin: 0;
 	padding: 0;
-
-	border: none;
 
 	font-family: "PT Sans", 'Tahoma', sans-serif;
 	font-size: 14px;
@@ -562,18 +572,21 @@ main {
 	text-align: center;
 	color: #000;
 
+	border: none;
 	background: #f2f2f2;
-
 	outline-color: #e5e5e5;
 }
 
 button.btn-minus::before {
 	content: "";
+
 	position: absolute;
 	top:10px;
 	left: 10px;
+
 	width: 20px;
 	height: 20px;
+
 	background: #f2f2f2 url("../img/btn-minus.png") no-repeat;
 	background-position: 4px 9px;
 }
@@ -592,6 +605,7 @@ button.btn-plus::before {
 	position: absolute;
 	top:10px;
 	left: 10px;
+
 	width: 20px;
 	height: 20px;
 
@@ -608,7 +622,7 @@ button.btn-plus:active::before {
 }
 
 .older-client span, .child-client span {
- 	display: inline-block;
+	display: inline-block;
 
 	font-size: 14px;
 	line-height: 26px;
@@ -632,8 +646,6 @@ button.btn-plus:active::before {
 	padding-top: 15px;
 	padding-bottom: 19px;
 
-	border: none;
-
 	font-family: "PT Sans", 'Tahoma', sans-serif;
 	font-size: 21px;
 	line-height: 26px;	
@@ -641,6 +653,7 @@ button.btn-plus:active::before {
 	text-transform: uppercase;
 	color: #fff;
 
+	border: none;
 	background-color: #83a2c1;
 	cursor: pointer;
 }
@@ -681,6 +694,7 @@ button.btn-plus:active::before {
 
 .index-footer {
 	position: relative;
+
 	margin-top: -120px;
 }
 
@@ -694,8 +708,8 @@ button.btn-plus:active::before {
 
 .footer-social {
 	width: 33.33%;
-	font-size: 0;
 
+	font-size: 0;
 }
 
 .social-btn {
@@ -703,12 +717,12 @@ button.btn-plus:active::before {
 
 	width: 46px;
 	height: 48px;
-
-	background: #81b3d2 url("../img/social-btn.png") no-repeat;
-
 	
 	vertical-align: middle;
 	text-indent: -12545px;
+
+	background: #81b3d2 url("../img/social-btn.png") no-repeat;
+
 }
 
 .social-btn:hover {
@@ -721,11 +735,13 @@ button.btn-plus:active::before {
 
 .social-btn-tw, .social-btn-tw:hover, .social-btn-tw:active {
 	margin-right: 5px;
+
 	background-position: 15px 12px;
 }
 
 .social-btn-fb, .social-btn-fb:hover, .social-btn-fb:active {
 	margin-right: 5px;
+
 	background-position: -38px 12px;
 }
 
@@ -744,10 +760,10 @@ button.btn-plus:active::before {
 	height: 39px;
 	margin-left: 5px;
 
-	background: url("../img/htmlacademy.png") no-repeat;
-
 	vertical-align: middle;
 	text-indent: -12545px;
+
+	background: url("../img/htmlacademy.png") no-repeat;
 }
 
 .htmlacademy-icon:hover {
@@ -786,6 +802,7 @@ button.btn-plus:active::before {
 
 .filter-form label {
 	display: block;
+
 	padding-bottom: 25px;
 }
 
@@ -799,52 +816,60 @@ button.btn-plus:active::before {
 
 .filter-form label {
 	position: relative;
+
 	margin-left: 40px;
 }
 
 .filter-form span,
 input[type="checkbox"] {
-  	position: absolute;
-  	cursor: pointer;
+	position: absolute;
+
+	cursor: pointer;
 }
 
 .filter-form input[type=checkbox] {
-  display: none;
+	display: none;
 }
 
 .filter-form span {
-  	display: block;
-  	left: -40px;
-  	top: 1px;
-
+	display: block;
+	top: 1px;
+	left: -40px;
+	
 	width: 17px;
 	height: 17px;
 
 	border: 2px solid #fff;
 	border-radius: 4px;
-
 	background: none;
 }
 
 .filter-form input[type=checkbox]:checked + span::before {
-    content: '';
-    position: absolute; 
-    left: 1px; 
-    top: 8px;  
-    width: 8px;
-    height: 4px;
-    background: #fff;
-    transform: rotate(45deg);    
+	content: '';
+
+	position: absolute; 
+	top: 8px;
+	left: 1px; 
+	transform: rotate(45deg);    
+
+	width: 8px;
+	height: 4px;
+
+	background: #fff;
 }
+
 .filter-form input[type=checkbox]:checked + span::after{
-    content: '';
-    position: absolute; 
-    left: 3px;
-    top: 5px;
-    width: 20px;
-    height: 4px;
-    background: #fff;
-    transform: rotate(-45deg);       
+	content: '';
+
+	position: absolute; 
+	top: 5px;
+	left: 3px;
+	transform: rotate(-45deg); 
+
+	width: 20px;
+	height: 4px;
+
+	background: #fff;
 }
 
 .filter-form input[type=checkbox]:disabled + span {
@@ -870,6 +895,7 @@ label.disabled  {
 
 .filter-range-title {
 	margin-bottom: 9px;
+
 	font-size: 16px;
 	font-weight: bold;
 	line-height: 21px;
@@ -877,38 +903,48 @@ label.disabled  {
 
 .price-controls {
 	position: relative;
+
 	width: 314px;
 	height: 36px;
 	margin-left: 10px;
 	margin-bottom: 20px;
+
 	font-size: 0;
+
 	border: 2px solid #fff;
 	border-radius: 2px;
 }
 
 .price-controls::after {
 	content: "";
+
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+
 	width: 2px;
 	height: 22px;
+
 	background: #fff;
 }
 
 .price-controls label {
 	display: inline-block;
+
 	font-size: 14px;
 	line-height: 38px;
 	vertical-align: top;
+
 	cursor: pointer;
 }
 
 .price-controls .min-price,
 .price-controls .max-price {
 	display: inline-block;
+
 	width: 90px;
+
 	text-align: center;
 }
 
@@ -927,19 +963,21 @@ label.disabled  {
 	font: inherit;	
 	color: inherit;
 
-	background: none;
 	border: none;
+	background: none;	
 	outline: none;
 }
 
 .range-controls {
 	position: relative;
+
 	margin-bottom: 32px;
 }
 
 .range-controls .scale {
 	margin-left: 16px;
 	height: 2px;
+
 	background: rgba(255, 255, 255, 0.3);
 }
 
@@ -957,10 +995,11 @@ label.disabled  {
 	width: 4px;
 	height: 4px;
 
-	background-color: #ababab;
 	border: 8px solid #fff;
 	border-radius: 50%;
+	background-color: #ababab;
 	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+
 	cursor: pointer;
 }
 
@@ -983,12 +1022,6 @@ label.disabled  {
 	height: 35px;
 	margin: 0 auto;
 
-	border: 2px solid #fff;
-	border-radius: 2px;
-	outline: none;
-	background: none;
-	cursor: pointer;
-
 	font-family: "PT Sans", 'Tahoma', sans-serif;
 	font-size: 14px;
 	line-height: 21px;
@@ -996,11 +1029,18 @@ label.disabled  {
 	text-align: center;
 	vertical-align: middle;
 	color: #fff;
+
+	border: 2px solid #fff;
+	border-radius: 2px;
+	outline: none;
+	background: none;
+	cursor: pointer;
 }
 
 .filter-range button:hover {
-	background-color: #fff;
 	color: #000;
+
+	background-color: #fff;
 }
 
 .result-container {
@@ -1024,6 +1064,7 @@ label.disabled  {
 
 .sorting {
 	flex-grow: 1;	
+
 	margin: auto 0;
 
 	font-size: 12px;
@@ -1041,29 +1082,36 @@ label.disabled  {
 
 .sorting li:first-child {
 	margin-left: 38px;
+
 	text-decoration: none;
 	color: #81b3d2;
 }
 
 .sorting li:nth-child(2) {
 	margin-left: 31px;	
+
 	color: #e5e5e5;
+
 	border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting li:last-child {
-	margin-left: 33px;	
+	margin-left: 33px;
+
 	color: #e5e5e5;
+
 	border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting li:hover {
 	color: #81b3d2;
+
 	border-bottom: 1px dotted #81b3d2
 }
 
 .sorting li:active {
 	color: #000;
+
 	border-bottom: none;
 }
 
@@ -1080,6 +1128,7 @@ label.disabled  {
 .sorting-arrow  a {
 	display: inline-block;
 	position: relative;
+
 	font-size: 0;
 }
 
@@ -1144,6 +1193,7 @@ a.arrow-down:active::after, a.arrow-down-active::after {
 
 .info-hotel {
 	flex-grow: 1;
+
 	padding-left: 30px;
 }
 
@@ -1211,6 +1261,7 @@ a.details-btn:active {
 .booking-btn {
 	width: 144px;
 	padding: 2px 0;
+
 	background-color: #766357;
 }
 
@@ -1228,11 +1279,13 @@ a.booking-btn:active {
 
 .stars-rating-hotel {
 	margin-top: 29px;
+
 	text-align: right;
 }
 
 .stars-rating-hotel ul  {
 	display: inline-block;
+
 	margin: 0;
 	padding: 0;
 
@@ -1242,8 +1295,10 @@ a.booking-btn:active {
 .stars-rating-hotel li {
 	width: 17px;
 	height: 17px;
-	background: url("../img/star-rating.png") no-repeat;
+
 	text-align: right;
+
+	background: url("../img/star-rating.png") no-repeat;
 }
 
 .customer-rating-hotel {
