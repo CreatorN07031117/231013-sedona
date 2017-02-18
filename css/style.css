@@ -413,6 +413,10 @@ main {
 	to {opacity: 1;}
 }
 
+.form-error {
+	box-shadow: 0 0 30px 5px rgba(216, 0, 0, 0.8);
+}
+
 .search-hotel-form div {
 	min-height: 40px;
 	margin: 15px 0;
