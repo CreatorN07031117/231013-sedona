@@ -39,7 +39,7 @@ body {
 }
 
 .main-nav li {
-	padding-top: 15px;
+	padding-top: 14px;
 	padding-bottom: 15px;
 	list-style: none;
 	line-height: 26px;
@@ -146,8 +146,8 @@ main {
 
 .entry-text h1 {
 	margin: 0;
-	padding-top: 59px;
-	padding-bottom: 29px;
+	padding-top: 61px;
+	padding-bottom: 27px;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
@@ -155,7 +155,7 @@ main {
 
 .entry-text p {
 	margin: 0;
-	margin-bottom: 52px;
+	margin-bottom: 51px;
 	line-height: 26px; 
 }
 
@@ -208,11 +208,11 @@ main {
 }
 
 .real-town span {
-	margin-top: 24px;
+	margin-top: 25px;
 }
 
 .real-town p {
-	margin: 25px 60px;
+	margin: 21px 60px;
 }
 
 .photo-real-town {
@@ -260,7 +260,7 @@ main {
 }
 
 .accomodition-features p {
-	margin: 23px 60px;
+	margin: 24px 60px;
 	line-height: 21px;
 }
 
@@ -290,7 +290,7 @@ main {
 }
 
 .food-features p {
-	margin: 23px 50px;
+	margin: 24px 50px;
 }
 
 .souvenir-features {
@@ -319,7 +319,7 @@ main {
 }
 
 .souvenir-features p {
-	margin: 23px 60px;
+	margin: 24px 60px;
 	line-height: 21px;
 }
 
@@ -343,16 +343,16 @@ main {
 }
 
 .devil-bridge b {
-	margin-top: 54px;
+	margin-top: 55px;
 	width: 160px;
 }
 
 .devil-bridge span {
-	margin-top: 26px;
+	margin-top: 25px;
 }
 
 .devil-bridge p {
-	margin: 25px 40px;
+	margin: 21px 40px;
 }
 
 .features-without-photo{
@@ -381,15 +381,15 @@ main {
 }
 
 .small-area b, .beautiful-road b, .without-tourists b {
-	margin-top: 47px;
+	margin-top: 48px;
 }
 
 .small-area span, .beautiful-road span, .without-tourists span {
-	margin-top: 24px;
+	margin-top: 25px;
 }
 
 .small-area p, .beautiful-road p, .without-tourists p {
-	margin: 21px 60px;
+	margin: 20px 60px;
 }
 
 .search-hotel-container {
@@ -406,7 +406,7 @@ main {
 .search-hotel-text {
 	width: 568px;
 	min-height: 149px;
-	margin-top: 56px;
+	margin-top: 57px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 70px; 
@@ -495,16 +495,26 @@ main {
 
 .search-hotel-form div {
 	min-height: 40px;
-	margin: 15px 0;
 	font-size: 0;
 	line-height: 0;
 }
 
+.checkin-date, .checkout-date {
+	margin: 15px 0;
+}
+
 .checkin-date label, .checkout-date label {
 	position: relative;
-	top: 5px;
 	font-size: 14px;
 	line-height: 26px;
+}
+
+.checkin-date label {
+	top: 5px;
+}
+
+.checkout-date label {
+	top: 2px;
 }
 
 .checkin-date input, .checkout-date input {
@@ -526,7 +536,7 @@ main {
 }
 
 .checkin-date input {
-	margin-left: 25px;
+	margin-left: 26px;
 }
 
 .checkout-date input {
@@ -574,8 +584,9 @@ main {
 }
 
 .client div {
-	margin: 0;
+	margin: 9px 0;
 	font-size: 0;
+	line-height: 0;
 }
 
 .older-client {
@@ -583,6 +594,7 @@ main {
 	width: 228px;
 	min-height: 40px;
 	font-size: 0;
+	line-height: 0;
 	vertical-align: middle;
 }
 
@@ -590,7 +602,7 @@ main {
 	display: inline-block;
 	width: 181px;
 	min-height: 40px;
-	padding-left: 45px;
+	padding-left: 50px;
 	font-size: 0;
 	vertical-align: middle;
 }
@@ -603,7 +615,7 @@ main {
 .older-client input, .child-client input {
 	display: inline-block;
 	width: 34px;
-	height: 40px;
+	height: 38px;
 	margin: 0;
 	padding: 0;
 	font-family: "PT Sans", 'Tahoma', sans-serif;
@@ -623,7 +635,7 @@ main {
 	position: relative;
 	display: inline-block;
 	width: 40px;
-	height: 40px;
+	height: 38px;
 	margin: 0;
 	padding: 0;
 	font-family: "PT Sans", 'Tahoma', sans-serif;
@@ -686,21 +698,23 @@ button.btn-plus:active::before {
 }
 
 .older-client span {
-	margin-right: 40px;
+	margin-right: 43px;
 }
 
 .child-client span {
-	margin-right: 26px;
+	margin-right: 28px;
 }
 
 .search-btn {
-	padding-top: 25px;
+	padding-top: 43px;
+	padding-bottom: 15px;
+	padding-left: 1px; 
 }
 
 .search-btn button {
 	width: 458px;
-	padding-top: 15px;
-	padding-bottom: 19px;
+	padding-top: 16px;
+	padding-bottom: 16px;
 	font-family: "PT Sans", 'Tahoma', sans-serif;
 	font-size: 21px;
 	line-height: 26px;	
@@ -761,8 +775,8 @@ button.btn-plus:active::before {
 }
 
 .footer-visitsedona {
-	width: 25%;
-	margin-top: 50px;
+	width: 24.5%;
+	margin-top:45px;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
@@ -770,7 +784,7 @@ button.btn-plus:active::before {
 
 .footer-social {
 	width: 33.33%;	
-	margin-top: 38px;
+	margin-top: 36px;
 	font-size: 0;
 }
 
@@ -792,35 +806,37 @@ button.btn-plus:active::before {
 }
 
 .social-btn-tw, .social-btn-tw:hover {
-	margin-right: 5px;
+	margin-right: 6px;
 	background-position: -194px -57px;
 }
 
 .social-btn-tw:active {
-	margin-right: 5px;
+	margin-right: 6px;
 	background-position: -222px -96px;
 }
 
 .social-btn-fb, .social-btn-fb:hover {
-	margin-right: 5px;
+	margin-right: 6px;
 	background-position: -247px -57px;
 }
 
 .social-btn-fb:active {
-	margin-right: 5px;
+	margin-right: 6px;
 	background-position: -276px -96px;
 }
 
-.social-btn-yt, .social-btn-yt:hover, .social-btn-yt:active {
+.social-btn-yt, .social-btn-yt:hover {
+	margin-right: 6px;
 	background-position: -298px -57px;
 }
 
 .social-btn-yt:active {
+	margin-right: 6px;
 	background-position: -327px -96px;
 }
 
 .footer-copyright {
-	width: 25%;
+	width: 24.2%;
 	margin-top: 41px;
 }
 
@@ -864,8 +880,8 @@ button.btn-plus:active::before {
 .filter-form p {
 	margin: 0;
 	padding: 0;
-	padding-top: 23px;
-	padding-bottom: 25px;
+	padding-top: 18px;
+	padding-bottom: 23px;
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: bold;
@@ -949,11 +965,13 @@ label.disabled  {
 
 .filter-range {
 	width: 30%;
-	margin-left: 23%; 
+	min-height: 200px;
+	margin-left: 22%; 
 }
 
 .filter-range-title {
-	margin-bottom: 9px;
+	margin-top: 18px;
+	margin-bottom: 11px;
 	font-size: 16px;
 	font-weight: bold;
 	line-height: 21px;
@@ -962,10 +980,11 @@ label.disabled  {
 .price-controls {
 	position: relative;
 	width: 314px;
-	height: 36px;
+	height: 32px;
 	margin-left: 10px;
-	margin-bottom: 20px;
+	margin-bottom: 18px;
 	font-size: 0;
+	line-height: 0;
 	border: 2px solid #fff;
 	border-radius: 2px;
 }
@@ -973,7 +992,7 @@ label.disabled  {
 .price-controls::after {
 	content: "";
 	position: absolute;
-	left: 50%;
+	left: 50.5%;
 	top: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
@@ -985,7 +1004,7 @@ label.disabled  {
 .price-controls label {
 	display: inline-block;
 	font-size: 14px;
-	line-height: 38px;
+	line-height: 28px;
 	vertical-align: top;
 	cursor: pointer;
 }
@@ -1003,7 +1022,7 @@ label.disabled  {
 }
 
 .price-controls .max-price {
-	padding-left: 25px;
+	padding-left: 19px;
 }
 
 .price-controls input {
@@ -1020,6 +1039,7 @@ label.disabled  {
 .range-controls {
 	position: relative;
 	margin-bottom: 32px;
+	padding-left: 4px;
 }
 
 .range-controls .scale {
@@ -1029,7 +1049,7 @@ label.disabled  {
 }
 
 .range-controls .bar {
-	width: 80%;
+	width: 83%;
 	height: 2px;
 	background-color: #fff;
 }
@@ -1055,14 +1075,16 @@ label.disabled  {
 }
 
 .range-toggle-max {
-	left: 80%;
+	left: 83%;
 }
 
 .filter-range button {
 	display: block;
-	width: 135px;
-	height: 35px;
-	margin: 0 auto;
+	width: 137px;
+	height: 36px;
+	margin: 0;
+	margin-left: 30%;
+	padding-top: 2px;  
 	font-family: "PT Sans", 'Tahoma', sans-serif;
 	font-size: 14px;
 	line-height: 21px;
@@ -1091,7 +1113,7 @@ label.disabled  {
 }
 
 .result {
-	width: 16%;
+	width: 15.5%;
 	margin: auto 0;
 	margin-top: 30px;
 	font-size: 21px;
@@ -1104,7 +1126,7 @@ label.disabled  {
 	flex-positive: 1;
 	flex-grow: 1;
 	margin: auto 0;
-	margin-top: 36px;
+	margin-top: 35px;
 	font-size: 12px;
 	line-height: 18px;
 }
@@ -1120,19 +1142,19 @@ label.disabled  {
 }
 
 .sorting li:first-child {
-	margin-left: 38px;
+	margin-left: 37px;
 	text-decoration: none;
 	color: #81b3d2;
 }
 
 .sorting li:nth-child(2) {
-	margin-left: 31px;	
+	margin-left: 29px;	
 	color: #e5e5e5;
 	border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting li:last-child {
-	margin-left: 33px;
+	margin-left: 31px;
 	color: #e5e5e5;
 	border-bottom: 1px dotted #81b3d2;
 }
@@ -1225,21 +1247,25 @@ a.arrow-down:active::after, a.arrow-down-active::after {
 	flex-positive: 1;
 	flex-grow: 1;
 	padding-left: 30px;
+	font-size: 0;
+	line-height: 0; 
 }
 
 .info-hotel h2{
 	margin: 0;
 	padding-top: 27px;
-	padding-bottom: 13px;
+	padding-bottom: 11px;
 	font-size: 21px;
 	font-weight: bold;
 }
 
 .info-hotel span {
 	display: inline-block;
-	width: 110px;
+	width: 112px;
 	padding: 0;
 	padding-bottom: 13px; 
+	font-size: 14px;
+	line-height: 21px;
 	text-align: left;
 	vertical-align: middle;
 }
@@ -1259,10 +1285,13 @@ a.arrow-down:active::after, a.arrow-down-active::after {
 }
 .speedaction-btn {
 	margin-bottom: 27px;
+	font-size: 0px;
 }
 
 .speedaction-btn a {
 	display: inline-block;
+	font-size: 14px;
+	line-height: 21px;
 	text-align: center;
 	vertical-align: middle;
 	color: #fff;
@@ -1274,7 +1303,7 @@ a.arrow-down:active::after, a.arrow-down-active::after {
 
 .details-btn {
 	width: 110px;
-	padding: 2px 0;
+	padding: 3px 0;
 	background-color: #81b3d2;
 }
 
@@ -1292,7 +1321,8 @@ a.details-btn:active {
 
 .booking-btn {
 	width: 144px;
-	padding: 2px 0;
+	padding: 3px 0;
+	margin-left: 6px;
 	background-color: #766357;
 }
 
@@ -1331,8 +1361,11 @@ a.booking-btn:active {
 
 .customer-rating-hotel {
 	width: 100px;
-	margin-top: 49px;
+	margin-top: 44px;
 	padding-right: 13px; 
+	padding-top: 4px;
+	font-size: 14px;
+	line-height: 21px;
 	text-align: right;
 	background-color: #f2f2f2;
 }
