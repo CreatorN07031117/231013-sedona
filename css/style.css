@@ -59,7 +59,7 @@ body {
 }
 
 .main-nav li:nth-child(3) {
-	margin-left: 20%;
+	margin-left: 18.8%;
 }
 
 
@@ -520,10 +520,10 @@ main {
 .checkin-date input, .checkout-date input {
 	position: absolute;
 	top: -10px;
-	width: 332px;
+	width: 334px;
 	height: 38px;
 	padding: 0;
-	padding-left: 14px; 
+	padding-left: 12px; 
 	font-family: "PT Sans", 'Tahoma', sans-serif;
 	font-size: 14px;
 	line-height: 26px;
@@ -576,22 +576,23 @@ main {
 }
 
 .checkin-date .calendar::before {
-	left: 342px;
+	left: 344px;
 }
 
 .checkout-date .calendar::before {
-	left: 338px;
+	left: 340px;
 }
 
 .client div {
-	margin: 9px 0;
+	margin-top: 9px;
+	margin-bottom: 9px;
 	font-size: 0;
 	line-height: 0;
 }
 
 .older-client {
 	display: inline-block;
-	width: 228px;
+	width: 230px;
 	min-height: 40px;
 	font-size: 0;
 	line-height: 0;
@@ -600,9 +601,9 @@ main {
 
 .child-client {
 	display: inline-block;
-	width: 181px;
+	width: 180px;
 	min-height: 40px;
-	padding-left: 50px;
+	margin-left: 50px;
 	font-size: 0;
 	vertical-align: middle;
 }
@@ -634,7 +635,7 @@ main {
 .older-client button, .child-client button {
 	position: relative;
 	display: inline-block;
-	width: 40px;
+	width: 39px;
 	height: 38px;
 	margin: 0;
 	padding: 0;
@@ -712,7 +713,7 @@ button.btn-plus:active::before {
 }
 
 .search-btn button {
-	width: 458px;
+	width: 460px;
 	padding-top: 16px;
 	padding-bottom: 16px;
 	font-family: "PT Sans", 'Tahoma', sans-serif;
@@ -1263,7 +1264,7 @@ a.arrow-down:active::after, a.arrow-down-active::after {
 	display: inline-block;
 	width: 115px;
 	padding: 0;
-	padding-bottom: 13px; 
+	padding-bottom: 14px; 
 	font-size: 14px;
 	line-height: 21px;
 	text-align: left;
@@ -1320,7 +1321,7 @@ a.details-btn:active {
 }
 
 .booking-btn {
-	width: 144px;
+	width: 142px;
 	padding: 3px 0;
 	margin-left: 6px;
 	background-color: #766357;
