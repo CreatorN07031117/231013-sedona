@@ -1257,8 +1257,11 @@ a.arrow-down:active::after, a.arrow-down-active::after {
 .info-hotel a:active {
 	color: #cacaca;
 }
+.speedaction-btn {
+	margin-bottom: 27px;
+}
 
-.speedaction-btn a{
+.speedaction-btn a {
 	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
