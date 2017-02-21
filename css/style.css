@@ -837,7 +837,7 @@ button.btn-plus:active::before {
 
 .footer-copyright {
 	width: 24.2%;
-	margin-top: 41px;
+	margin-top: 50px;
 }
 
 .htmlacademy-icon {
@@ -1253,15 +1253,15 @@ a.arrow-down:active::after, a.arrow-down-active::after {
 
 .info-hotel h2{
 	margin: 0;
-	padding-top: 27px;
-	padding-bottom: 11px;
+	padding-top: 38px;
+	padding-bottom: 20px;
 	font-size: 21px;
 	font-weight: bold;
 }
 
 .info-hotel span {
 	display: inline-block;
-	width: 112px;
+	width: 115px;
 	padding: 0;
 	padding-bottom: 13px; 
 	font-size: 14px;
@@ -1362,8 +1362,9 @@ a.booking-btn:active {
 .customer-rating-hotel {
 	width: 100px;
 	margin-top: 44px;
+	padding-top: 2px;
 	padding-right: 13px; 
-	padding-top: 4px;
+	padding-bottom: 2px;
 	font-size: 14px;
 	line-height: 21px;
 	text-align: right;
